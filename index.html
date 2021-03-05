@@ -1,12 +1,330 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Техномарт</title>
-  </head>
-  <body>
+<html lang="ru" class="html">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/apple180x180.png">
+  <!--    <link rel="manifest" href="manifest.webmanifest">-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>HTML Academy: Техномарт</title>
+</head>
+<body class="page">
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="container">
+      <a class="page-header__logo">
+        <svg width="108" height="18" aria-label="Логотип компании Техномарт" role="img" fill="none"
+             xmlns="http://www.w3.org/2000/svg">
+          <title>Техномарт</title>
+          <path class="main-logo" fill-rule="evenodd" clip-rule="evenodd"
+                d="M103.85 2.66v14.79h-2.12V2.65h-3.75V1.03h9.62v1.64h-3.75zm-8.14 8.7c-.37.46-.83.79-1.38.98-.56.2-1.22.3-1.99.3A12 12 0 0190 12.4v5.05h-2.12V1.25c.6-.17 1.2-.3 1.8-.36.6-.07 1.25-.11 1.96-.11.94 0 1.74.1 2.4.3.65.19 1.18.51 1.59.97.4.45.7 1.05.9 1.8.18.76.27 1.69.27 2.8 0 1.14-.09 2.1-.27 2.86a4.62 4.62 0 01-.82 1.85zm-1.2-6.82a3.3 3.3 0 00-.55-1.34 2 2 0 00-.95-.7 4.2 4.2 0 00-1.37-.2H90V11h1.64c.53 0 .99-.07 1.37-.2a2 2 0 00.95-.7c.25-.33.44-.77.55-1.34.12-.56.18-1.26.18-2.11 0-.85-.06-1.55-.18-2.11zM82.6 13.22h-4.7l-1.05 4.23h-2.12l4-16.43h3.05l3.99 16.43h-2.11l-1.06-4.23zm-2.3-9.86h-.1l-1.94 8.22h3.99L80.3 3.36zM70.16 5.24h-.12l-3.4 10.1h-2.12l-3.4-10.1H61l-.7 12.21h-2.12l.94-16.43h2.58l3.83 11.26h.1l3.82-11.26h2.58l.94 16.43h-2.1l-.71-12.2zM54.38 15.92c-.44.65-.97 1.1-1.59 1.37-.61.26-1.32.4-2.12.4s-1.5-.14-2.13-.4a3.69 3.69 0 01-1.58-1.37 7.22 7.22 0 01-1-2.6 20.56 20.56 0 01-.34-4.09c0-1.64.11-3 .34-4.1a7.22 7.22 0 011-2.59c.44-.64.97-1.1 1.58-1.36.62-.27 1.33-.4 2.13-.4.8 0 1.5.13 2.12.4.62.27 1.15.72 1.59 1.36.44.64.77 1.5 1 2.6.22 1.08.34 2.45.34 4.1 0 1.64-.12 3-.34 4.09a7.22 7.22 0 01-1 2.6zM53.36 5.76a8.2 8.2 0 00-.65-2.16c-.26-.53-.58-.9-.94-1.1-.36-.2-.73-.31-1.1-.31-.38 0-.74.1-1.1.3-.36.2-.68.58-.94 1.1a8.2 8.2 0 00-.65 2.17c-.16.9-.25 2.06-.25 3.47 0 1.41.09 2.57.25 3.48.17.9.38 1.63.65 2.16.26.53.58.9.94 1.1.36.2.72.3 1.1.3.37 0 .74-.1 1.1-.3.36-.2.68-.57.94-1.1a8.2 8.2 0 00.65-2.16c.16-.91.24-2.07.24-3.48 0-1.4-.08-2.56-.24-3.47zM40.69 9.94h-4.93v7.51h-2.11V1.02h2.11v7.27h4.93V1.02h2.11v16.43h-2.1V9.94zm-11.15 7.51l-2.94-7.04-2.93 7.04h-2.11L25.08 9 21.9 1.02h2.11l2.58 6.57 2.59-6.57h2.11L28.13 9l3.52 8.45h-2.11zM12.28 1.02h7.99v1.64H14.4v5.4h5.16V9.7H14.4v6.1h5.87v1.65h-7.99V1.02zM6.65 17.45H4.54V2.65H.78V1.03h9.62v1.64H6.65v14.79z"
+                fill="#fff"/>
+        </svg>
+      </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <div class="page-header__inner">
+        <form action="https://echo.htmlacademy.ru" method="get" class="page-header__form">
+          <input type="text" class="field page-header__search" name="search" id="header-search" placeholder="Поиск:">
+          <label for="header-search"><span class="sr-only">Поиск по сайту</span></label>
+        </form>
 
-  </body>
+        <ul class="header-menu__list">
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link header-menu__link--bookmarks" aria-label="Перейти в закладки">Закладки:
+              0</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link header-menu__link--cart" aria-label="Перейти в корзину">Корзина: 0</a>
+          </li>
+          <li class="header-menu__item">
+            <a href="#" class="header-menu__link header-menu__link--checkout"
+               aria-label="Перейти на страницу оформления заказа">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="user-info">
+
+      <div class="user-info__inner">
+        <h1 class="user-info__title">Интернет-магазин <br> строительных материалов <br> и инструментов для ремонта</h1>
+
+        <div class="user-info__contacts">
+          <a href="tel:7812550555" class="user-info__phone" aria-label="Сделать звонок">+7 (812) 555-05-55</a>
+          <p class="user-info__address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        </div>
+
+        <ul class="login">
+          <li>
+            <a href="#" class="login__link login__link--login">Войти</a>
+          </li>
+          <li>
+            <a href="#" class="login__link login__link--register">Регистрация</a>
+          </li>
+        </ul>
+      </div>
+
+      <nav>
+        <ul class="header-submenu__list">
+          <li class="header-submenu__item">
+            <a href="#" class="header-submenu__link">Главная</a>
+          </li>
+          <li class="header-submenu__item">
+            <a href="#" class="header-submenu__link">Компания</a>
+          </li>
+          <li class="header-submenu__item">
+            <a href="#" class="header-submenu__link">Каталог</a>
+          </li>
+          <li class="header-submenu__item">
+            <a href="#" class="header-submenu__link">Новости</a>
+          </li>
+          <li class="header-submenu__item">
+            <a href="#" class="header-submenu__link">Спецпредложения</a>
+          </li>
+          <li class="header-submenu__item">
+            <a href="#" class="header-submenu__link">Доставка</a>
+          </li>
+          <li class="header-submenu__item">
+            <a href="#" class="header-submenu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <section class="offers">
+      <h2 class="sr-only">Мы предлагаем</h2>
+      <div class="offers__block offers__block--paint">
+        <div class="promo-label promo-label--offers" aria-label="Новинка!" role="note">new</div>
+        <h3 class="offers__title">Материалы</h3>
+        <a href="#" class="offers__link" aria-label="Перейти на страницу Материалы">на любой вкус</a>
+      </div>
+      <div class="offers__block offers__block--tools">
+        <h3 class="offers__title">Инструменты</h3>
+        <a href="#" class="offers__link" aria-label="перейти на страницу Инструменты">на все случаи</a>
+      </div>
+      <div class="offers__block offers__block--tech">
+        <h3 class="offers__title">Техника</h3>
+        <a href="#" class="offers__link" aria-label="Перейти на страницу Техника">для стройки</a>
+      </div>
+      <div class="offers__block offers__block--shop">
+        <h3 class="offers__title">Скидки 50%</h3>
+        <a href="#" class="offers__link" aria-label="Узнать подробнее про скидки">на 350 товаров</a>
+      </div>
+      <div class="offers__block offers__block--delivery">
+        <h3 class="offers__title">Доставка</h3>
+        <a href="#" class="offers__link" aria-label="Узнать подробнее про доставку">бесплатно</a>
+      </div>
+      <div class="promo-slider">
+        <ul class="promo-slider__list">
+          <li class="promo-slider__item promo-slider__item--current">
+            <div class="promo-slider__head">
+              <h3 class="promo-slider__title">Перфораторы</h3>
+              <p class="promo-slider__descr">Настоящие мужские игрушки</p>
+            </div>
+            <img src="img/slider-img1.jpg" alt="Рабочий с перфоратором фирмы Bosch" class="promo-slider__img"
+                 width="620" height="266">
+            <a href="#" class="btn-red promo-slider__link" aria-label="Перейти на страницу каталога">открыть каталог</a>
+          </li>
+          <li class="promo-slider__item">
+            <h3 class="promo-slider__title">Дрели</h3>
+            <p class="promo-slider__descr">Соседям на радость!</p>
+            <img src="img/slider-img2.jpg" alt="Рабочий с дрелью фирмы Bosch" class="promo-slider__img"
+                 width="620" height="266">
+            <a href="#" class="btn-red promo-slider__link" aria-label="Перейти на страницу каталога">открыть каталог</a>
+          </li>
+          <li class="promo-slider__item">
+            <h3 class="promo-slider__title">Перфораторы</h3>
+            <p class="promo-slider__descr">Настоящие мужские игрушки</p>
+            <img src="img/slider-img1.jpg" alt="Рабочий с перфоратором фирмы Bosch" class="promo-slider__img"
+                 width="620" height="266">
+            <a href="#" class="btn-red promo-slider__link" aria-label="Перейти на страницу каталога">открыть каталог</a>
+          </li>
+        </ul>
+
+        <div class="arrow-control">
+          <button class="btn arrow-control__btn arrow-control__btn--prev" type="button">
+            <svg class="arrow-left-icon" width="23" height="41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.83.97l2.09 2.1L5.13 20.94l17.85 17.94-2.1 2.1L.96 20.95 20.83.97z" fill="#fff"/>
+            </svg>
+            <span class="sr-only">Предыдущий слайд</span>
+          </button>
+          <button class="btn arrow-control__btn arrow-control__btn--next" type="button">
+            <svg class="arrow-right-icon" width="22" height="40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.08 39.06L.08 37l17.01-17.45L.02 2.06l2-2.05L21.1 19.56 2.08 39.06z" fill="#fff"/>
+            </svg>
+            <span class="sr-only">Следующий слайд</span>
+          </button>
+        </div>
+
+        <div class="dot-control">
+          <button class="btn dot-control__btn" type="button"></button>
+          <button class="btn dot-control__btn dot-control__btn--current" type="button"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular-products">
+      <div class="popular-products__head">
+        <h2 class="popular-products__title">Популярные товары:</h2>
+        <a href="#" class="btn-red popular-products__red-link">все популярные товары</a>
+      </div>
+
+      <ul class="popular-products__list">
+        <li class="popular-products__item">
+          <div class="popular-products__container">
+            <img src="img/product-img1.jpg" alt="Синий перфоратор фирмы Bosch, модель BFG 9000"
+                 class="popular-products__photo" width="184" height="164">
+            <div class="popular-products__control">
+              <button class="btn popular-products__order">Купить</button>
+              <button class="btn popular-products__bookmark">В закладки</button>
+            </div>
+          </div>
+          <h3 class="popular-products__name">Перфоратор BOSCH <br> BFG 9000</h3>
+          <span class="popular-products__old-price"><s>32500 Р.</s></span>
+          <div class="popular-products__price">
+            <svg class="price-label" aria-hidden="true" focusable="false" width="141" height="38" viewBox="0 0 141 38"
+                 fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z"
+                    fill="#EE3643"/>
+            </svg>
+            <span>25500 Р.</span>
+          </div>
+        </li>
+        <li class="popular-products__item">
+          <div class="promo-label promo-label--products" aria-label="Новинка!" role="note">new</div>
+          <div class="popular-products__container">
+            <img src="img/product-img2.jpg" alt="Синий перфоратор фирмы Bosch, модель BFG 9000"
+                 class="popular-products__photo" width="127" height="112">
+            <div class="popular-products__control">
+              <button class="btn popular-products__order">Купить</button>
+              <button class="btn popular-products__bookmark">В закладки</button>
+            </div>
+          </div>
+          <h3 class="popular-products__name">Перфоратор BOSCH <br> BFG 3000</h3>
+          <span class="popular-products__old-price"><s>22500 Р.</s></span>
+          <div class="popular-products__price">
+            <svg class="price-label" aria-hidden="true" focusable="false" width="141" height="38" viewBox="0 0 141 38"
+                 fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z"
+                    fill="#EE3643"/>
+            </svg>
+            <span>15500 Р.</span>
+          </div>
+
+        </li>
+        <li class="popular-products__item">
+          <div class="popular-products__container">
+            <img src="img/product-img3.jpg" alt="Синий перфоратор фирмы Bosch, модель BFG 9000"
+                 class="popular-products__photo" width="144" height="128">
+            <div class="popular-products__control">
+              <button class="btn popular-products__order">Купить</button>
+              <button class="btn popular-products__bookmark">В закладки</button>
+            </div>
+          </div>
+          <h3 class="popular-products__name">Перфоратор BOSCH <br> BFG 6000</h3>
+          <span class="popular-products__old-price"><s>30500 Р.</s></span>
+          <div class="popular-products__price">
+            <svg class="price-label" aria-hidden="true" focusable="false" width="141" height="38" viewBox="0 0 141 38"
+                 fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z"
+                    fill="#EE3643"/>
+            </svg>
+            <span>25500 Р.</span>
+          </div>
+        </li>
+        <li class="popular-products__item">
+          <div class="promo-label promo-label--products" aria-label="Новинка!" role="note">new</div>
+          <div class="popular-products__container">
+            <img src="img/product-img2.jpg" alt="Синий перфоратор фирмы Bosch, модель BFG 9000"
+                 class="popular-products__photo" width="127" height="112">
+            <div class="popular-products__control">
+              <button class="btn popular-products__order">Купить</button>
+              <button class="btn popular-products__bookmark">В закладки</button>
+            </div>
+          </div>
+          <h3 class="popular-products__name">Перфоратор BOSCH <br> BFG 2000</h3>
+          <span class="popular-products__old-price"><s>22500 Р.</s></span>
+          <div class="popular-products__price">
+            <svg class="price-label" aria-hidden="true" focusable="false" width="141" height="38" viewBox="0 0 141 38"
+                 fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M121.632 0H3C1.35 0 0 1.35 0 3V35C0 36.65 1.35 38 3 38H121.632L141 19L121.632 0Z"
+                    fill="#EE3643"/>
+            </svg>
+            <span>12500 Р.</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="brands">
+      <div class="brands__head">
+        <h2 class="brands__title">Популярные производители:</h2>
+        <a href="#" class="btn-red brands__red-link">все производители</a>
+      </div>
+
+      <ul class="brands__list">
+        <li>
+          <a href="#" class="brands__link">
+            <img src="img/brands/bosch.jpg" alt="Логотип компании BOSCH" class="brands__logo" width="126" height="37">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brands__link">
+            <img src="img/brands/Makita.jpg" alt="Логотип компании Makita" class="brands__logo" width="123" height="40">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brands__link">
+            <img src="img/brands/DeWALT.jpg" alt="Логотип компании DeWALT" class="brands__logo" width="146" height="44">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brands__link">
+            <img src="img/brands/interskol.jpg" alt="Логотип компании Интерскол" class="brands__logo" width="200"
+                 height="75">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brands__link">
+            <img src="img/brands/Hitachi.jpg" alt="Логотип компании HITACHI" class="brands__logo" width="169"
+                 height="31">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brands__link">
+            <img src="img/brands/LG.jpg" alt="Логотип компании LG" class="brands__logo" width="121" height="73">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brands__link">
+            <img src="img/brands/AEG.jpg" alt="Логотип компании AEG" class="brands__logo" width="151" height="96">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="brands__link">
+            <img src="img/brands/Metabo.jpg" alt="Логотип компании Metabo" class="brands__logo" width="204" height="69">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="services">
+      <div class="services__head">
+        <h2 class="services__title">Сервисы</h2>
+        <p class="services__descr">Хороший интернет-магазин отличается от&nbsp;плохого не&nbsp;только ценами!</p>
+        <p class="services__descr">Мы&nbsp;стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+      </div>
+    </section>
+  </div>
+</main>
+
+</body>
 </html>
