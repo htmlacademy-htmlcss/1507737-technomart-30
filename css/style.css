@@ -1194,6 +1194,7 @@ img {
 }
 
 .tab-content__info {
+  position: relative;
   margin-bottom: 24px;
   width: 315px;
   z-index: 2;
@@ -1212,12 +1213,37 @@ img {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
 }
 
 .tab-content__btn {
   padding: 10px 45px;
   border-radius: 2px;
+}
+
+.tab-content__item--delivery .tab-content__img {
+  top: 21px;
+}
+
+.tab-content__item--security .tab-content__title {
+  margin: 0 0 25px;
+}
+
+.tab-content__item--security .tab-content__img {
+  top: -2px;
+  right: -10px;
+}
+
+.tab-content__item--credit .tab-content__title {
+  margin: 0 0 29px;
+}
+
+.tab-content__item--credit .tab-content__info {
+  margin-bottom: 25px;
+}
+
+.tab-content__item--credit .tab-content__img {
+  top: -1px;
+  right: -11px;
 }
 
 /*Information*/
