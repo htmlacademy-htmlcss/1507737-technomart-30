@@ -1077,8 +1077,10 @@ img {
   box-shadow: 0 0 15px 2px var(--items-shadow-color);
 }
 
-.brands__logo {
-  object-fit: cover;
+.brands__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /*Services*/
