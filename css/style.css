@@ -260,8 +260,6 @@ img {
 
 .company-logo {
   display: block;
-  position: absolute;
-  padding: 12px 56px 13px;
   width: 220px;
   min-height: 47px;
   background: var(--header-logo-color);
@@ -292,8 +290,12 @@ img {
 .page-header__inner {
   display: flex;
   align-items: flex-start;
-  padding: 0 0 0 220px;
   min-height: 42px;
+}
+
+.page-header__logo {
+  padding: 12px 56px 13px;
+  margin-bottom: -5px;
 }
 
 .page-header__form {
@@ -1344,20 +1346,22 @@ img {
 
 .page-footer__logo {
   padding: 20px 37px 20px 41px;
-  top: 0;
-  left: 10px;
+  margin-bottom: 23px;
   min-height: 68px;
 }
 
 .page-footer__inner {
   display: flex;
   justify-content: space-between;
-  padding: 37px 0 54px;
+  padding-bottom: 54px;
 }
 
 .page-footer__info {
-  padding: 54px 0 0 3px;
   max-width: 325px;
+}
+
+.page-footer__contacts {
+  padding-left: 3px;
 }
 
 .page-footer__address,
@@ -1370,6 +1374,10 @@ img {
   text-decoration: none;
 }
 
+.page-footer__address {
+  margin-bottom: 1px;
+}
+
 .page-footer__phone:hover {
   text-decoration: underline;
 }
@@ -1380,6 +1388,7 @@ img {
 }
 
 .page-footer__links {
+  padding-top: 38px;
   max-width: 550px;
 }
 
