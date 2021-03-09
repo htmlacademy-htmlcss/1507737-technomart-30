@@ -1083,6 +1083,10 @@ img {
   box-shadow: 0 0 15px 2px var(--items-shadow-color);
 }
 
+.brands__link:active {
+  opacity: 0.4;
+}
+
 .brands__img {
   max-width: 100%;
   max-height: 100%;
