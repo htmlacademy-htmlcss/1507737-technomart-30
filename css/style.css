@@ -1456,8 +1456,8 @@ img {
   list-style: none;
 }
 
-.main-links__item:not(:last-child) {
-  margin-right: 58px;
+.main-links__item:not(:first-child) {
+  margin-left: 58px;
 }
 
 .main-links__link {
