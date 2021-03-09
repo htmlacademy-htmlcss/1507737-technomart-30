@@ -963,7 +963,7 @@ img {
 
 .popular-products__old-price {
   margin-bottom: 13px;
-  font-family: 'PTSans', serif;
+  font-family: 'PT Sans', serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
@@ -981,15 +981,36 @@ img {
 }
 
 .popular-products__price {
+  padding-right: 3px;
+}
+
+.popular-products__red-label {
   position: relative;
-  padding: 10px 0;
-  width: 141px;
+  padding: 10px 20px 9px 26px;
+  width: 123px;
   min-height: 38px;
+  text-align: center;
+  background-color: var(--basic-red);
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.popular-products__red-label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -18px;
+  height: 100%;
+  border-style: solid;
+  border-width: 19px 0 19px 19px;
+  border-color: transparent transparent transparent var(--basic-red);
+}
+
+.popular-products__cost {
   font-family: 'PT Sans', serif;
   font-weight: 700;
   font-size: 17px;
   line-height: 18px;
-  text-align: center;
   color: var(--main-text-white-color);
 }
 
