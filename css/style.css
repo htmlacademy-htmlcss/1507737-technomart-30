@@ -878,7 +878,8 @@ img {
   transition: .1s all;
 }
 
-.popular-products__item:hover {
+.popular-products__item:hover,
+.popular-products__item:focus {
   box-shadow: 0 0 15px 2px var(--items-shadow-color);
 }
 
@@ -1021,11 +1022,13 @@ img {
   color: var(--main-text-white-color);
 }
 
-.popular-products__item:hover .popular-products__photo {
+.popular-products__item:hover .popular-products__photo,
+.popular-products__item:focus-within .popular-products__photo{
   display: none;
 }
 
-.popular-products__item:hover .popular-products__control {
+.popular-products__item:hover .popular-products__control,
+.popular-products__item:focus-within .popular-products__control {
   display: block;
 }
 
