@@ -271,9 +271,15 @@ img {
   display: block;
 }
 
-.company-logo[href]:hover path {
-  fill: #000000;
+.company-logo[href]:hover,
+.company-logo[href]:focus {
+  background-color: var(--main-btn-hover-color);
 }
+
+.company-logo[href]:active {
+  background-color: var(--main-btn-active-color);
+}
+
 
 /*Header*/
 
