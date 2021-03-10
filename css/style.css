@@ -1642,8 +1642,13 @@ img {
 /*Feedback modal*/
 
 .modal-feedback {
+  display: none;
   width: 620px;
   min-height: 423px;
+}
+
+.modal-feedback--show {
+  display: block;
 }
 
 .modal-feedback__close {
@@ -1727,12 +1732,37 @@ img {
   min-height: 38px;
 }
 
+/*Modal map*/
 
+.modal-map {
+  display: none;
+  width: 943px;
+  height: 450px;
+}
 
+.modal-map--show {
+  display: block;
+}
 
+.modal-map__close {
+  position: absolute;
+  top: 10px;
+  right: 19px;
+  width: 21px;
+  height: 21px;
+  z-index: 2;
+}
 
+.modal-map__close::after {
+  content: url('data:image/svg+xml,%3Csvg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M13.273 10.5l7.422-7.422a1.003 1.003 0 000-1.414L19.336.305a1.003 1.003 0 00-1.414 0L10.5 7.727 3.078.305a1.003 1.003 0 00-1.414 0L.305 1.664a1.003 1.003 0 000 1.414L7.727 10.5.306 17.922a1.003 1.003 0 000 1.414l1.359 1.359a1.003 1.003 0 001.414 0l7.422-7.422 7.422 7.422a1.003 1.003 0 001.414 0l1.359-1.359a1.003 1.003 0 000-1.414L13.273 10.5z" fill="%23EE3643"/%3E%3C/svg%3E');
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
-
+.modal-map__container {
+  height: 450px;
+}
 
 
 
