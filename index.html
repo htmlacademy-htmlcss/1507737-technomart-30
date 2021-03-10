@@ -25,7 +25,7 @@
       </a>
 
       <form action="https://echo.htmlacademy.ru" method="get" class="page-header__form">
-        <input type="text" class="field page-header__search" name="search" id="header-search" placeholder="Поиск:">
+        <input type="text" class="page-header__search" name="search" id="header-search" placeholder="Поиск:">
         <label for="header-search"><span class="visually-hidden">Поиск по сайту</span></label>
       </form>
 
@@ -155,8 +155,10 @@
         </div>
 
         <div class="dot-control">
-          <button class="btn dot-control__btn" type="button"><span class="visually-hidden">Показать 1 слайд</span></button>
-          <button class="btn dot-control__btn dot-control__btn--current" type="button"><span class="visually-hidden">Показать 2 слайд</span></button>
+          <button class="btn dot-control__btn" type="button"><span class="visually-hidden">Показать 1 слайд</span>
+          </button>
+          <button class="btn dot-control__btn dot-control__btn--current" type="button"><span class="visually-hidden">Показать 2 слайд</span>
+          </button>
         </div>
       </div>
     </section>
@@ -179,11 +181,11 @@
           </div>
           <h3 class="popular-products__name">Перфоратор BOSCH <br> BFG 9000</h3>
           <span class="popular-products__old-price"><s>32500 Р.</s></span>
-         <div class="popular-products__price">
-           <div class="popular-products__red-label">
-             <strong class="popular-products__cost">25500 Р.</strong>
-           </div>
-         </div>
+          <div class="popular-products__price">
+            <div class="popular-products__red-label">
+              <strong class="popular-products__cost">25500 Р.</strong>
+            </div>
+          </div>
         </li>
         <li class="popular-products__item" tabindex="0">
           <div class="promo-label promo-label--products" aria-label="Новинка!" role="note">new</div>
@@ -503,5 +505,36 @@
   </div>
 </footer>
 
+<div class="modal modal-feedback">
+  <button class="btn modal-feedback__close" type="button">
+    <span class="visually-hidden">Закрыть окно</span>
+  </button>
+  <form action="https://echo.htmlacademy.ru/" method="post" class="modal-feedback__form">
+    <div class="modal-feedback__wrapper">
+      <div class="modal-feedback__name">
+        <label for="feedback-name-input" class="modal-feedback__label modal-feedback__label--name">Ваше имя:</label>
+        <input type="text" class="modal-feedback__input" id="feedback-name-input" name="feedback-name"
+               placeholder="Имя Фамилия" aria-invalid="true">
+      </div>
+
+      <div class="modal-feedback__email">
+        <label for="feedback-email-input" class="modal-feedback__label modal-feedback__label--email">Ваш e-mail:</label>
+        <input type="email" class="modal-feedback__input" id="feedback-email-input" name="feedback-email"
+               placeholder="email@example.com" aria-invalid="true">
+      </div>
+
+      <div class="modal-feedback__message">
+        <label for="feedback-message-input" class="modal-feedback__label modal-feedback__label--message">Текст
+          письма:</label>
+        <textarea class="modal-feedback__input modal-feedback__input--message" name="feedback-message" id="feedback-message-input"
+                  placeholder="В свободной форме" aria-invalid="true"></textarea>
+      </div>
+    </div>
+
+    <div class="modal-feedback__bottom">
+      <button class="btn btn-red modal-feedback__btn">Отправить</button>
+    </div>
+  </form>
+</div>
 </body>
 </html>
