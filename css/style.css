@@ -129,7 +129,7 @@
   --sevices-bg-color: #F1F5F7;
   --services-tab-color: var(--basic-blue);
   --services-tab-hover-color: var(--second-blue);
-  --services-tab-current-color: var(--basic-white);
+  --services-tab-active-color: var(--basic-white);
   --services-tab-shadow-color: var(--second-blue);
   --services-tab-shadow-second-color: #405069;
 
@@ -1244,12 +1244,12 @@ img {
   background-color: var(--services-tab-hover-color);
 }
 
-.tab-panel__btn--current,
-.tab-panel__btn--current:hover,
-.tab-panel__btn--current:active,
-.tab-panel__btn--current:focus {
+.tab-panel__btn--active,
+.tab-panel__btn--active:hover,
+.tab-panel__btn--active:active,
+.tab-panel__btn--active:focus {
   color: var(--main-text-blue-color);
-  background-color: var(--services-tab-current-color);
+  background-color: var(--services-tab-active-color);
   box-shadow: none;
   cursor: default;
 }
@@ -1267,7 +1267,7 @@ img {
   width: 619px;
 }
 
-.tab-content__item--current {
+.tab-content__item--active {
   display: block;
 }
 

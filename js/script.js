@@ -1,3 +1,35 @@
+
+// Services tabs
+
+const tabsBtn = document.querySelectorAll('.tab-panel__btn');
+const tabsItems = document.querySelectorAll('.tab-content__item')
+
+tabsBtn.forEach(tabsClick);
+
+function tabsClick(item) {
+  item.addEventListener('click', function () {
+    let activeBtn = item
+    let tabId = activeBtn.getAttribute('data-tab')
+    let activeTab = document.querySelector(tabId)
+
+    if (!activeBtn.classList.contains('tab-panel__btn--active')) {
+      tabsBtn.forEach(function (item) {
+        item.classList.remove('tab-panel__btn--active')
+      })
+
+      tabsItems.forEach(function (item) {
+        item.classList.remove('tab-content__item--active')
+      })
+
+      activeBtn.classList.add('tab-panel__btn--active')
+      activeTab.classList.add('tab-content__item--active')
+    }
+  })
+}
+
+document.querySelector('.tab-panel__btn').click();
+
+
 // Feedback modal
 
 const feedbackModal = document.querySelector('.modal-feedback');
@@ -88,13 +120,6 @@ mapClose.addEventListener('click', () => {
   mapModal.classList.remove('modal--show')
 });
 
-
-
-
-
-
-
-
 // Map
 
 ymaps.ready(init);
@@ -112,3 +137,5 @@ function init() {
 
   map.geoObjects.add(placemark);
 }
+
+

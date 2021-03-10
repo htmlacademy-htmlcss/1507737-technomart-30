@@ -308,18 +308,18 @@
       <div class="services__info">
         <ul class="tab-panel">
           <li class="tab-panel__item">
-            <button class="btn tab-panel__btn tab-panel__btn--current" type="button">Доставка</button>
+            <button class="btn tab-panel__btn" type="button" data-tab="#delivery">Доставка</button>
           </li>
           <li class="tab-panel__item">
-            <button class="btn tab-panel__btn" type="button">Гарантия</button>
+            <button class="btn tab-panel__btn" type="button" data-tab="#security">Гарантия</button>
           </li>
           <li class="tab-panel__item">
-            <button class="btn tab-panel__btn" type="button">Кредит</button>
+            <button class="btn tab-panel__btn" type="button" data-tab="#credit">Кредит</button>
           </li>
         </ul>
 
         <ul class="tab-content__list">
-          <li class="tab-content__item tab-content__item--delivery tab-content__item--current">
+          <li class="tab-content__item tab-content__item--delivery" id="delivery">
             <h3 class="tab-content__title">Доставка</h3>
             <div class="tab-content__info">
               <p class="tab-content__desc">Мы&nbsp;с&nbsp;удовольствием доставим ваш товар прямо <br> к&nbsp;вашему
@@ -329,7 +329,7 @@
             <img src="img/delivery-photo.png" alt="Картинка с грузовиком" class="tab-content__img" width="468"
                  height="261">
           </li>
-          <li class="tab-content__item tab-content__item--security">
+          <li class="tab-content__item tab-content__item--security" id="security">
             <h3 class="tab-content__title">Гарантия</h3>
             <div class="tab-content__info">
               <p class="tab-content__desc">Если купленный у&nbsp;нас товар поломается или заискрит, а&nbsp;также в&nbsp;случае
@@ -340,7 +340,7 @@
             <img src="img/security-photo.png" alt="Картинка с грузовиком" class="tab-content__img" width="389"
                  height="283">
           </li>
-          <li class="tab-content__item tab-content__item--credit">
+          <li class="tab-content__item tab-content__item--credit" id="credit">
             <h3 class="tab-content__title">Кредит</h3>
             <div class="tab-content__info">
               <p class="tab-content__desc">Залезть в&nbsp;долговую яму стало проще!</p>
