@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Viktor Zdorovcew](https://up.htmlacademy.ru/htmlcss/30/user/1507737).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Асташина](https://htmlacademy.ru/profile/helen_astashina).
 
 ---
 
